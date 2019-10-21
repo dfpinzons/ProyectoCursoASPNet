@@ -5,10 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="fromGitHub\**" />
     <Compile Remove="Views\Escuela\NewFolder\**" />
+    <Content Remove="fromGitHub\**" />
     <Content Remove="Views\Escuela\NewFolder\**" />
+    <EmbeddedResource Remove="fromGitHub\**" />
     <EmbeddedResource Remove="Views\Escuela\NewFolder\**" />
+    <None Remove="fromGitHub\**" />
     <None Remove="Views\Escuela\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\ListaObjetoEscuela.cshtml" />
+    <Content Remove="Views\Shared\ObjetoEscuelaBaseSimple.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\ListaObjetoEscuela.cshtml" />
+    <None Include="Views\Shared\ObjetoEscuelaBaseSimple.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +31,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\Alumno\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Alumno\MultiAlumno.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Asignatura\MultiAsignatura.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Asignatura\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Escuela\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

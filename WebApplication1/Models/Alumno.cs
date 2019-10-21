@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CoreEscuela.Entidades
+namespace WebApplication1.Models
 {
     public class Alumno: ObjetoEscuelaBase
     {

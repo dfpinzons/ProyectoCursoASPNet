@@ -1,6 +1,6 @@
 using System;
 
-namespace CoreEscuela.Entidades
+namespace WebApplication1.Models
 {
     public class Evaluaciones
     {

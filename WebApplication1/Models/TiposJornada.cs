@@ -1,4 +1,4 @@
-namespace CoreEscuela.Entidades
+namespace WebApplication1.Models
 {
     public enum TiposJornada
     {

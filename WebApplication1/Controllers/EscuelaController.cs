@@ -14,9 +14,14 @@ namespace WebApplication1.Controllers
         public IActionResult Index()
         {
             var escuela = new Escuela();
-            escuela.AñoFundacion = 2005;
-            escuela.EscuelaId = Guid.NewGuid().ToString();
+            escuela.AñoDeCreación = 2005;
+            escuela.UniqueId = Guid.NewGuid().ToString();
             escuela.Nombre = "Platzi";
+            escuela.Ciudad = "Bogota";
+            escuela.Pais = "Colombia";
+            escuela.Dirección = "Kra 33 s ";
+            escuela.TipoEscuela = TiposEscuela.Secundaria;
+
             ViewBag.CosaDinamica = "La Monja";
             
             // El view es el Index.cshtml de View/Escuela
