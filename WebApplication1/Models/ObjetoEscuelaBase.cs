@@ -4,7 +4,8 @@ namespace WebApplication1.Models
 {
     public abstract class ObjetoEscuelaBase
     {
-        public string UniqueId { get;  set; }
+        // The ID must be called only like ID not UniqueID
+        public string Id { get;  set; }
         public string Nombre { get; set; }
 
         public ObjetoEscuelaBase()
@@ -14,7 +15,7 @@ namespace WebApplication1.Models
 
         public override string ToString()
         {
-            return $"{Nombre},{UniqueId}";
+            return $"{Nombre},{Id}";
         }
     }
 }
