@@ -1,0 +1,25 @@
+﻿@model Curso
+@{
+    ViewData["Title"] = "Creacion de curso";
+    Layout = "Simple";
+
+}
+
+<h1> @ViewData["Title"]   </h1>
+<form action="/" method="post">
+
+    <div>
+        <label asp-for="Nombre" />
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label asp-for="Dirección" />
+        <input asp-for="Dirección" />
+    </div>
+    <div>
+        <label asp-for="Jornada" />
+        <input asp-for="Jornada" />
+    </div>
+
+    <input type="submit" />
+</form>
